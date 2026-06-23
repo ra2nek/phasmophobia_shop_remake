@@ -1,0 +1,32 @@
+.unlocked{
+    background-color: #c7e4e8;
+    color: black;
+}
+
+.unlocked:hover{
+    background-color: #97b0b3;
+    color: black;
+}
+
+.locked{
+    background-color: #2d3635;
+    color: white;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bigText{
+    text-transform: uppercase;
+    font-size: 3vmin;
+}
+
+h3{
+    font-size: 2vh;
+}
+
+.centerText{
+    display: grid;
+    place-items: center;
+}

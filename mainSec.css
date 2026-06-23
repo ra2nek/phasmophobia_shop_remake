@@ -1,0 +1,102 @@
+/* MAIN SECTION */
+
+/*? JEST 20 itemow w grze*/
+
+
+section#main{
+    position: absolute;
+    top: 10%;
+    height: 80vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 40vh);
+    grid-template-rows: repeat(4, 40vh);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1vh;
+    padding: 2.5vw;
+    padding-top: 5vh;
+    scroll-behavior: smooth;
+}
+
+/** SCROLL */
+
+section#main::-webkit-scrollbar{
+    width: 3vmin;
+    
+}
+
+section#main::-webkit-scrollbar-track{
+    background-color: #0d1111;
+    background-image: linear-gradient(to bottom, #16251a,#0d1111);
+}
+
+section#main::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 2vmin;
+}
+
+section#main::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(128, 128, 128);
+}
+
+/** Cells */
+
+.cell{
+    background-image: linear-gradient(to bottom,#182b21,#0d1111);
+    background-color: #0d1111;
+    height: 30vh;
+    aspect-ratio: 1/1;
+    position: relative;
+    transition: box-shadow .5s ease;
+}
+
+.cell:hover{
+    box-shadow: 0vmin 0vmin 5vmin #243729;
+}
+
+.cell img{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+
+.cell:hover img:nth-child(2){
+    transform: scale(110%) translate(-50%, -50%);
+}
+
+.tierBox{
+    width: 20%;
+    aspect-ratio: 1/1;
+    background-color: #005050;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color .5s;
+}
+
+.tierBox:hover{
+    background-color: #002d2d;
+}
+
+.tierBox:hover img{
+    transform: scale(110%)  translate(-45%, -45%);
+}
+
+.cell button{
+    width: 50%;
+    height: 4vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.cell button:nth-of-type(0){
+    left: 0;
+}
+
+.cell button:nth-of-type(1){
+    right: 0;
+}

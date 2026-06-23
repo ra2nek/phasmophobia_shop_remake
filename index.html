@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainSec.css">
+    <link rel="stylesheet" href="var.css">
+    <!-- MAIN JS -->
+    <script src="js.js" defer></script>
+    <!-- ITEMS JS -->
+    <script src="items.js" defer></script>
+    <script src="itemLoad.js" defer></script>
+    <script src="itemScripts.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div id="top">
+        <h1>Loadout</h1>
+        </div>
+        <section id="top-left">
+            <p>MONEY: <span class="bold" id="playerMoney">2 złote</span></p>
+            <p>LEVEL: <span class="bold" id="playerLevel">3</span></p>
+            <p id="shopLogo">GH<span>//OS.T</span></p>
+        </section>
+    </header>
+
+    <section id="right">
+        <table id="sideSection">
+            <thead>
+                <tr>
+                    <th>Name:</th>
+                    <th>Quantity:</th>
+                </tr>
+            </thead>
+            <tbody id="itemList">
+                <!--
+                <tr>
+                    <td class="itemName"></td>
+                    <td class="itemQuantity"></td>
+                </tr> 
+                -->
+                <tr>
+                    <td class="itemName"><a href="#flashlight">flashlight</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondTier1 forced diamond"></div>
+                        <div class="diamondNone diamond"></div>
+                        <div class="diamondNone diamond"></div>
+                        <div class="diamondNone diamond"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#D.O.T.S projector">D.O.T.S projector</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondTier1 forced diamond"></div>
+                        <div class="diamondNone diamond"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemName"><a href="#EMF reader">EMF reader</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondTier1 forced"></div>
+                        <div class="diamondNone">
+                        </div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#ghost writing">GHOST WRITING</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondTier1 forced"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#spirit box">SPIRIT BOX</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondTier1 forced"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#thermometer">THERMOMETER</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondTier1 forced"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#uv light">UV LIGHT</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondTier1 forced"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#video camera">VIDEO CAMERA</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondTier1 forced"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="itemName"><a href="#tripod">tripod</a></td>
+                    <td class="itemQuantity">
+                    <div class="diamondNone"></div>
+                    <div class="diamondNone"></div>
+                    <div class="diamondNone"></div>
+                    <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#crucifix">crucifix</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#firelight">firelight</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#incense">incense</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#igniter">igniter</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                
+                <tr>
+                    <td class="itemName"><a href="#head gear">head gear</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                
+                
+                <tr>
+                    <td class="itemName"><a href="#motion sensor">motion sensor</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#parabolic microphone">parabolic microphone</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#photo camera">photo camera</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#salt">salt</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#sanity medication">sanity medication</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="itemName"><a href="#sound sensor">sound sensor</a></td>
+                    <td class="itemQuantity">
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                        <div class="diamondNone"></div>
+                    </td>
+                </tr> 
+                
+                </tr> 
+            </tbody>
+        </table>
+        <div id="sideButtons">
+            <button>BUY: <span id="finalPrice">0$</span></button>
+            <button onclick="check(0)" class="unchecked">auto buy</button>
+            <button onclick="check(1)" class="unchecked">auto add</button>
+        </div>
+    </section>
+
+    <section id="bottom">
+        <h1>Loadouts</h1>
+        <button class="unlocked">1</button>
+        <button class="unlocked">2</button>
+        <button class="unlocked">3</button>
+    </section>
+
+    <section id="main">
+        <div class="cell">Item</div>   
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+        <div class="cell">Item</div>
+    </section>
+
+</body>
+</html>
